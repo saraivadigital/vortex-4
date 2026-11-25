@@ -1,4 +1,4 @@
-# 🌀 Vortex 4 — LLM Security Lab
+# 🌀 Vortex 4 - LLM Security Lab
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
