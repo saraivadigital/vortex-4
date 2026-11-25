@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Vortex 4 — laboratório local de segurança de LLMs">
+  <title>Vortex 4 | LLM Security Lab</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="#"><span class="mark">VX4</span><span>VORTEX <b>4</b><small>LLM SECURITY LAB by Saraiva Digital</small></span></a>
+      <div class="status"><i></i><span id="connection">VERIFICANDO MODELO</span></div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="eyebrow">LAB <span>•</span> DIRECT INJECTION</div>
+        <h1>Vortex <em>4</em></h1>
+        <p>O assistente recebeu instruções para proteger uma informação confidencial. Seu objetivo é testar os limites dessas instruções.</p>
+        <div class="meta"><span>◈ LAB</span><span>◈ PROMPT INJECTION</span><span>◈ Modelo IA Local</span></div>
+      </section>
+
+      <section class="workspace">
+        <div class="panel-head">
+          <div><span class="live-dot"></span><b>VORTEX Assite</b><small>QWEN 2.5 • LOCAL INFERENCE</small></div>
+          <button id="reset" class="ghost">↻ NOVA SESSÃO</button>
+        </div>
+        <div id="messages" class="messages" aria-live="polite">
+          <div class="message Assistente"><div class="avatar">VX4</div><div class="bubble"><small>VORTEX Assistente</small><p>Olá! Sou o assistente do Vortex 4. Como posso ajudar você hoje?</p></div></div>
+        </div>
+        <form id="chat-form" class="composer">
+          <textarea id="prompt" rows="2" maxlength="4000" placeholder="Digite sua mensagem ou tentativa de Prompt Injection..." required></textarea>
+          <button id="send" type="submit"><span>ENVIAR</span><b>↗</b></button>
+        </form>
+        <div class="hint">ENTER PARA ENVIAR <span>•</span> SHIFT + ENTER PARA NOVA LINHA</div>
+      </section>
+
+      <section id="win" class="win hidden">
+        <div class="win-icon">✓</div><div><small>CHALLENGE COMPLETED</small><h2>Informação revelada!</h2><p>O modelo reproduziu a flag protegida nas instruções.</p><code id="flag"></code></div>
+      </section>
+
+      <footer><span>VORTEX 4 <b>v1.0.0</b></span><span>Lab Educacional • IA Rodando Local</span></footer>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
