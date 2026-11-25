@@ -1,4 +1,6 @@
-# Vortex 4 — LLM Security Lab
+# Vortex 4 - LLM Security Lab
+
+![Interface](vortex_4_interface.jpg)
 
 **Vortex 4** é um laboratório educacional para estudar vulnerabilidades de **Prompt Injection** em modelos de linguagem (LLMs). O projeto executa localmente com Docker, Ollama e Qwen 2.5, sem depender de API comercial, chave de API ou token.
 
@@ -98,13 +100,17 @@ docker compose down -v
 
 ## Como funciona o desafio
 
-### LAB — Direct Injection
+### LAB - Direct Injection
 
 O assistente recebe um prompt de sistema com regras para não revelar uma informação confidencial fictícia. O participante conversa diretamente com o modelo e tenta fazer com que ele desobedeça às instruções.
 
 **Objetivo:** obter a flag do desafio por meio de uma resposta do próprio modelo.
 
 A validação desta primeira versão procura a flag exata no texto retornado pelo modelo. Portanto, respostas parafraseadas, parcialmente reveladas ou codificadas podem não ser reconhecidas pelo avaliador.
+
+### Flag Revelada:
+
+![flag](flag_revelada.jpg)
 
 ## Exemplos de tentativas de Prompt Injection
 
