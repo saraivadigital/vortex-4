@@ -72,7 +72,8 @@ O primeiro laboratório trabalha com **Injeção Direta (Direct Prompt Injection
 
 ```bash
 git clone https://github.com/saraivadigital/vortex-4.git
-cd Vortex-4
+
+cd vortex-4
 ```
 
 ### 2️⃣ Inicie os containers
